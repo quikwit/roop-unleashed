@@ -52,7 +52,7 @@ def faceswap_tab():
                         local_folder = gr.Textbox(show_label=False, placeholder="/content/", interactive=True)
                 with gr.Row(variant='panel'):
                     bt_srcfiles = gr.Files(label='Source File(s)', file_count="multiple", file_types=["image", ".fsz"], elem_id='filelist', height=233)
-                    bt_destfiles = gr.Files(label='Target File(s)', file_count="multiple", file_types=["image", "video"], elem_id='filelist', height=233)
+                    bt_destfiles = gr.FileExplorer(label='Target File(s)', file_count="multiple", root="/content/drive/MyDrive/targets")
                 with gr.Row(variant='panel'):
                     gr.Markdown('')
                     forced_fps = gr.Slider(minimum=0, maximum=120, value=0, label="Video FPS", info='Overrides detected fps if not 0', step=1.0, interactive=True, container=True)
