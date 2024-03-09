@@ -3,7 +3,7 @@ from typing import List
 
 source_path = None
 target_path = None
-output_path = None
+output_path = '/content/drive/MyDrive/results/'
 target_folder_path = None
 
 frame_processors: List[str] = []
